@@ -1,0 +1,764 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.2.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>MHG 关于怪物的异常状态</TITLE>
+<style type="text/css">
+<!--
+.hpb-cnt-tb1{
+	background-color: #333333;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb2{
+	background-color: #333333;
+	border: 0px solid #333333;
+}
+.hpb-cnt-tb-th1 {
+	background-color: #BBBBBB;
+	font-size: 80%;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb-cell1 {
+	background-color: #EEEEEE;
+	font-size: 80%;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+  
+}
+.hpb-cnt-tb-cell2 {
+	background-color: #FFFFFF;
+	font-size: 80%;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width : 1px;
+	border-bottom-width : 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+  text-align : center;
+}
+.hpb-cnt-tb-cell3 {
+	background-color: #FFFFFF;
+	font-size: 80%;
+	color: #333333;
+	border: 0px solid #333333;
+  margin-top : 0px;
+  margin-left : 0px;
+  margin-right : 0px;
+  margin-bottom : 0px;
+}
+-->
+</style>
+</HEAD>
+
+<H3>关于怪物的异常状态</H3>
+在此发布关于怪物的异常状态（毒・麻痹・睡眠）与麻醉状态的调查结构。<BR>
+<BR>
+<BR>
+●毒状态<BR>
+<BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050316192821" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TH class="hpb-cnt-tb-th1" width="100">怪物名</TH>
+      <TH class="hpb-cnt-tb-th1" width="200">耐性值的上升</TH>
+      <TH class="hpb-cnt-tb-th1" width="80">持续时间</TH>
+      <TH class="hpb-cnt-tb-th1" width="80">体力减少<BR>
+      （每5秒）</TH>
+      <TH class="hpb-cnt-tb-th1" width="80">蓄积值减少<BR>
+      （每5秒）</TH>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">大怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">100→150→200→250→300</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">毒怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">砂龙王</TD>
+      <TD class="hpb-cnt-tb-cell2">100→150→200→250→300</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→175→250→325→400</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">110→185→260→335→410</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">110→185→260→335→410</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">岩龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→225→300→375→450</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">一角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→175→250→325→400</TD>
+      <TD class="hpb-cnt-tb-cell2">120秒</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">120秒</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">麒麟</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">老山龍</TD>
+      <TD class="hpb-cnt-tb-cell2">毒无效</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑龍</TD>
+      <TD class="hpb-cnt-tb-cell2">400→450→500→550→600</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">青大怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">100→150→200→250→300</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">紫毒怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">300→375→450→525→600</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">樱雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">30</TD>
+      <TD class="hpb-cnt-tb-cell2">15</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">苍雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">215→290→365→440→515</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">30</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">金雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">350→450→550→650→750</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">30</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">银雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">400→500→600→700→800</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">35</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">翠水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→200→300→400→500</TD>
+      <TD class="hpb-cnt-tb-cell2">90秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">赤电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">110→185→260→335→410</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">40</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">250→300→350→400→450</TD>
+      <TD class="hpb-cnt-tb-cell2">90秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">白一角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→200→300→400→500</TD>
+      <TD class="hpb-cnt-tb-cell2">90秒</TD>
+      <TD class="hpb-cnt-tb-cell2">20</TD>
+      <TD class="hpb-cnt-tb-cell2">10</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<P class="hpb-cnt-tb-cell3">Monster Hunter G中不再像前作一样，能通过使用毒属性攻击毒状态的怪物，维持其毒状态。<BR>
+上表<B>持续时间</B>表示的时间经过后，必定会解除毒状态。<BR>
+<BR>
+但是，毒状态下进行毒攻击并非是无用的。怪物进入毒状态时，蓄积值会重置为0，<BR>
+如进行毒攻击，则再度进行蓄积值的累加计算。而且，毒状态中蓄积值不会发生减少。<BR>
+（通常状态时如上表所示，每隔一定时间后蓄积值都会减少）<BR>
+但是，在毒状态下，蓄积值不会达到当前的耐性值，无论进行多少毒攻击都不会再蓄积。<BR>
+<BR>
+例如，初期状态（耐性值＝110）的雄火龙进入毒状态后，再使用毒攻击，蓄积值最高只能达到109。<BR>
+然后，在毒状态解除的瞬间，蓄积值下降一个阶段（109−10＝99），且以后每5秒都会下降10点。<BR>
+毒状态结束时，其耐性值将上升1阶段，变为185。因此，要使其再度中毒，<BR>
+至少还需要86点的蓄积值。<BR>
+<BR>
+每次毒攻击都会重置蓄积值减少的计数器，也就是说，在计数器结束之前继续进行毒攻击的话，<BR>
+蓄积值完全不减少就再度进入毒状态也是可能的。<BR>
+<BR>
+蓄积值不会因怪物的区域移动而重置。<BR>
+<BR>
+毒的蓄积不仅会因为玩家的毒攻击，还会因为红速龙等其它怪物的毒攻击而进行蓄积。<BR>
+尽管量可能较少，但会导致蓄积值计数器重新进行计数，可以说毒蓄积值是不太容易减少的。<BR>
+<BR>
+<BR>
+耐性值上升的次数，由前作的3回提高至4回。耐性上升的幅度相比前作也要更大，<BR>
+蓄积值减少的速度是前作的2倍。<BR>
+<BR>
+例：雄火龙的毒耐性值<BR>
+　　　　110→185→260→335→410<BR>
+<BR>
+　　前作的雄火龙<BR>
+　　　　110→160→210→260<BR>
+<BR>
+<BR>
+就蓄积量而言，LV1毒弹每发25、LV2毒弹每发50点蓄积。枪弩的子弹造成的蓄积值不因距离或击中的部位而产生变化。<BR>
+毒属性的武器效果发动时，按照状态信息中显示的属性值的1/10进行蓄积。<BR>
+毒生肉每块有200点蓄积值。<BR>
+<BR>
+<B>异常状态攻击强化</B>技能发动的场合，每次的蓄积值变为1.125倍（小数点以下舍去）。例如，<BR>
+初期状态的雄火龙毒化需要3发LV2毒弹，拥有这个技能只需要2发即可毒化。<BR>
+<BR>
+一角龙与角龙在潜入地下与钻出地面的过程中无法进行毒蓄积。</P>
+<BR>
+<HR>
+<BR>
+●麻痹状态<BR>
+<BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050316202513" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TH class="hpb-cnt-tb-th1" width="100">怪物名</TH>
+      <TH class="hpb-cnt-tb-th1" width="200">耐性值的上升</TH>
+      <TH class="hpb-cnt-tb-th1" width="80">持续时间</TH>
+      <TH class="hpb-cnt-tb-th1" width="120">蓄积值减少</TH>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">大怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">100→165→230→295→360</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">毒怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">150→200→250→300→350</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">砂龙王</TD>
+      <TD class="hpb-cnt-tb-cell2">150→200→250→300→350</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→175→250→325→400</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">5秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每15秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">110→185→260→335→410</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→175→250→325→400</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">岩龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">一角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→225→300→375→450</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每15秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每15秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">麒麟</TD>
+      <TD class="hpb-cnt-tb-cell2">麻痹无效</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">老山龍</TD>
+      <TD class="hpb-cnt-tb-cell2">麻痹无效</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑龍</TD>
+      <TD class="hpb-cnt-tb-cell2">400→450→500→550→600</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">青大怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">100→175→250→325→400</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">紫毒怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">150→200→250→300→350</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">樱雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">125→200→275→350→425</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">苍雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">125→200→275→350→425</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">金雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">银雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">翠水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→200→300→400→500</TD>
+      <TD class="hpb-cnt-tb-cell2">10秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">赤电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">350→425→500→575→650</TD>
+      <TD class="hpb-cnt-tb-cell2">5秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每15秒减10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→300→400→500→600</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">250→325→400→475→550</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每15秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">白一角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→275→350→425→500</TD>
+      <TD class="hpb-cnt-tb-cell2">15秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每15秒减5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<P class="hpb-cnt-tb-cell3">至于麻痹，与前作相比基本没有什么变化。<BR>
+<BR>
+与毒状态不同的是，怪物在麻痹状态中即便受到麻痹攻击也不会再蓄积。<BR>
+麻痹解除后，蓄积值会从0开始重新计算。<BR>
+<BR>
+蓄积值减少的计数器在每次受到麻痹攻击后都会重置。因此，在计数器结束之前持续进行麻痹攻击，<BR>
+蓄积值完全不减少就进入麻痹状态也是可能的。<BR>
+<BR>
+蓄积值不会因怪物的区域移动而重置。<BR>
+<BR>
+麻痹的蓄积不仅会因为玩家的麻痹攻击，还会因为黄速龙等其它怪物的麻痹攻击而进行蓄积。<BR>
+尽管量可能较少，但会导致蓄积值计数器重新进行计数，可以说麻痹蓄积值是不太容易减少的。<BR>
+<BR>
+<BR>
+耐性值上升的次数，由前作的3回提高至4回。耐性上升的幅度相比前作也要更大。<BR>
+<BR>
+例：雌火龙的麻痹耐性值<BR>
+　　　　110→185→260→335→410<BR>
+<BR>
+　　前作的雌火龙<BR>
+　　　　110→160→210→260<BR>
+<BR>
+<BR>
+就蓄积量而言，LV1麻痹弹每发25、LV2麻痹弹每发50点蓄积。枪弩的子弹造成的蓄积值不因距离或击中的部位而产生变化。<BR>
+麻痹属性的武器效果发动时，按照状态信息中显示的属性值的1/10进行蓄积。<BR>
+麻痹生肉每块有200点蓄积值。<BR>
+<BR>
+<B>异常状态攻击强化</B>技能发动的场合，每次的蓄积值变为1.125倍（小数点以下舍去）。例如，<BR>
+初期状态的雌火龙麻痹化需要3发LV2麻痹弹，拥有这个技能只需要2发即可麻痹化。<BR>
+<BR>
+一角龙与角龙在潜入地下与钻出地面的过程中无法进行麻痹蓄积。</P>
+<BR>
+<HR>
+<BR>
+●睡眠状态<BR>
+<BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050316202513" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TH class="hpb-cnt-tb-th1" width="100">怪物名</TH>
+      <TH class="hpb-cnt-tb-th1" width="200">耐性值的上升</TH>
+      <TH class="hpb-cnt-tb-th1" width="80">持续时间</TH>
+      <TH class="hpb-cnt-tb-th1" width="120">蓄积值减少</TH>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">大怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">110→135→160→185→210</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">毒怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">150→175→200→225→250</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">砂龙王</TD>
+      <TD class="hpb-cnt-tb-cell2">110→135→160→185→210</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→150→200→250→300</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→225→250→275→300</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→200→250→300→350</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→175→200→225→250</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">岩龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100→150→200→250→300</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">一角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→200→250→300→350</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→175→200→225→250</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">麒麟</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每20秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">老山龍</TD>
+      <TD class="hpb-cnt-tb-cell2">睡眠无效</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑龍</TD>
+      <TD class="hpb-cnt-tb-cell2">400→450→500→550→600</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">青大怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">110→135→160→185→210</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">紫毒怪鸟</TD>
+      <TD class="hpb-cnt-tb-cell2">100→125→150→175→200</TD>
+      <TD class="hpb-cnt-tb-cell2">50秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">樱雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→225→300→375→450</TD>
+      <TD class="hpb-cnt-tb-cell2">30秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">苍雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→225→250→275→300</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">金雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">银雄火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→225→250→275→300</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">翠水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">赤电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→225→250→275→300</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">200→250→300→350→400</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">黑角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→175→200→225→250</TD>
+      <TD class="hpb-cnt-tb-cell2">50秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">白一角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">150→200→250→300→350</TD>
+      <TD class="hpb-cnt-tb-cell2">40秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<P class="hpb-cnt-tb-cell3">至于睡眠，与前作相比基本没有什么变化。<BR>
+<BR>
+蓄积值减少的计数器在每次受到睡眠攻击后都会重置。因此，在计数器结束之前持续进行睡眠攻击，<BR>
+蓄积值完全不减少就进入睡眠状态也是可能的。<BR>
+<BR>
+蓄积值不会因怪物的区域移动而重置。<BR>
+<BR>
+耐性值上升的次数，由前作的3回提高至4回。<BR>
+<BR>
+就蓄积量而言，LV1睡眠弹每发25、LV2睡眠弹每发50点蓄积。枪弩的子弹造成的蓄积值不因距离或击中的部位而产生变化。<BR>
+睡眠属性的武器效果发动时，按照状态信息中显示的属性值的1/10进行蓄积。<BR>
+睡眠生肉每块有200点蓄积值。<BR>
+<BR>
+<B>异常状态攻击强化</B>技能发动的场合，每次的蓄积值变为1.125倍（小数点以下舍去）。例如，<BR>
+初期状态的大怪鸟进入睡眠需要3发LV2睡眠弹，拥有这个技能只需要2发即可睡眠。<BR>
+<BR>
+一角龙与角龙在潜入地下与钻出地面的过程中无法进行睡眠蓄积。</P>
+<BR>
+<HR>
+<BR>
+●麻醉状态<BR>
+<BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050316202513" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TH class="hpb-cnt-tb-th1" width="100">怪物名</TH>
+      <TH class="hpb-cnt-tb-th1" width="200">耐性値</TH>
+      <TH class="hpb-cnt-tb-th1" width="80">持续时间</TH>
+      <TH class="hpb-cnt-tb-th1" width="120">蓄积值减少</TH>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">大怪鸟<BR>毒怪鸟<BR>
+水龙<BR>
+电龙<BR>
+雌火龙<BR>
+雄火龙<BR>
+青大怪鸟<BR>
+紫毒怪鸟<BR>
+樱雌火龙<BR>
+苍雄火龙<BR>
+金雌火龙<BR>
+银雄火龙<BR>
+翠水龙<BR>
+赤电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">100（耐性值不会上升）</TD>
+      <TD class="hpb-cnt-tb-cell2">60秒</TD>
+      <TD class="hpb-cnt-tb-cell2">每10秒减5</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">上述以外</TD>
+      <TD class="hpb-cnt-tb-cell2">麻醉无效</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+      <TD class="hpb-cnt-tb-cell2">-</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<P class="hpb-cnt-tb-cell3">麻醉状态是指捕获任务的支给品--捕获用麻醉球（弹）使怪物进入的睡眠状态。<BR>
+每个捕获用麻醉球（弹）的蓄积量为80点。因此，通常需要２个才能使怪物进入睡眠状态。<BR>
+<BR>
+与其它异常状态相同，蓄积值会随着时间经过而减少，使用第１个道具后如果经过太久，第２个可能无法使怪物进入睡眠状态。<BR>
+<BR>
+蓄积值不会因怪物的区域移动而重置。</P>
+<BR>
+<BR>
+2005/04/01<BR>
+2005/03/16<BR>
+<BR>
+<BR>
+</BODY>
+</HTML>

@@ -1,0 +1,438 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.2.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>MHG 对怪物伤害【武器】</TITLE>
+<style type="text/css">
+<!--
+.hpb-cnt-tb1{
+	background-color: #333333;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb2{
+	background-color: #333333;
+	border: 0px solid #333333;
+}
+.hpb-cnt-tb-th1 {
+	background-color: #BBBBBB;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb-cell1 {
+	background-color: #FFFFFF;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb-cell2 {
+	background-color: #FFFFFF;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb-cell3 {
+	background-color: #FFFFFF;
+	font-size: 80%;
+	color: #333333;
+	border: 0px solid #333333;
+  
+
+  margin-top : 0px;
+  margin-left : 0px;
+  margin-right : 0px;
+  margin-bottom : 0px;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<H3>对怪物伤害【武器】</H3>
+玩家的武器对怪物造成的伤害包括通常伤害与属性伤害。<BR>
+通常伤害是武器造成的物理伤害，属性伤害是由火・水・雷・龍属性造成的伤害。<BR>
+<BR>
+<HR>
+●通常伤害<BR>
+<BR>
+<BR>
+<B>武器倍率</B><BR>
+<BR>
+通常伤害随着武器攻击力的增加而提高，但进行计算的攻击力是基于一个叫做武器倍率的数值，<BR>
+而不是状态显示中的攻击力数值。<BR>
+武器倍率是攻击力用来除以的对应武器种类固有的倍率。<BR>
+【倍率＝大剑：4.8　片手剑/双剑：1.4　大锤：5.2　长枪：2.3　枪弩：1.2】<BR>
+<BR>
+力之护符、料理效果、鬼人药、技能等造成的攻击力增加，都要与武器倍率相乘进行计算。<BR>
+因此，状态信息中根据武器的不同，攻击力增加的幅度也会有所差别。<BR>
+<BR>
+<BR>
+<B>攻击动作的威力差异</B><BR>
+<BR>
+同种武器的威力会因不同的攻击动作而不同。例如，片手剑的回旋斩为24％，跳斩为18%。<BR>
+武器倍率乘以这个值表示了动作的基本威力。<BR>
+<BR>
+各武器的攻击动作威力　（数值为百分比　多次打击的情况已分别列出）<BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050319164824" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TH nowrap colspan="2" class="hpb-cnt-tb-th1">攻击动作</TH>
+      <TH nowrap width="183" class="hpb-cnt-tb-th1">威力</TH>
+      <TH width="306" class="hpb-cnt-tb-th1">备注</TH>
+    </TR>
+    <TR>
+      <TD nowrap rowspan="4" align="center" width="114" class="hpb-cnt-tb-cell1">大剑</TD>
+      <TD width="127" class="hpb-cnt-tb-cell2">纵斩</TD>
+      <TD nowrap align="center" width="183" class="hpb-cnt-tb-cell2">48</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">持剑状态下的纵斩</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">横扫</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">36</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">上斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">46</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">拔刀攻击</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">48</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">移动中的纵斩</TD>
+    </TR>
+    <TR>
+      <TD rowspan="8" align="center" width="114" class="hpb-cnt-tb-cell1">片手剑</TD>
+      <TD width="127" class="hpb-cnt-tb-cell2">前斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">14</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">横斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">12</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">前斩的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">剑盾连击</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">8・12</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">横斩的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">回旋斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">24</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">跳斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">18</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">上斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">15</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">跳斩与翻滚后的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">防御攻击</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">14</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">防御中的攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">拔刀攻击</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">18</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">移动中的纵斩（跳斩）</TD>
+    </TR>
+    <TR>
+      <TD rowspan="8" align="center" width="114" class="hpb-cnt-tb-cell1">双剑<BR>
+      （通常状态）</TD>
+      <TD width="127" class="hpb-cnt-tb-cell2">下斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">14</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">斜向斩1</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">8・6</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">下斩的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">斜向斩2</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">5・7・16</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">斜向斩1的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">右回旋斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">10・8・6</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">左回旋斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">10・8・6</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">切裂斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">12・6</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">上斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">15</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">切裂斩与翻滚后的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">拔刀攻击</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">12・6</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">移動中的下斩（切裂斩）</TD>
+    </TR>
+    <TR>
+      <TD rowspan="7" align="center" width="114" class="hpb-cnt-tb-cell1">双剑<BR>
+      （鬼人化）</TD>
+      <TD width="127" class="hpb-cnt-tb-cell2">下斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">18</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">斜向斩1</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">10・8</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">下斩的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">斜向斩2</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">6・9・21</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">斜向斩1的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">右2回旋斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">13・10・8・13・10・8</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">左2回旋斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">13・10・8・13・10・8</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">上斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">20</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">翻滚后的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD width="127" class="hpb-cnt-tb-cell1">乱舞斩</TD>
+      <TD align="center" width="183" class="hpb-cnt-tb-cell2">28・5・5・5・5・5・5・5・5・33</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD rowspan="9" align="center" class="hpb-cnt-tb-cell1">大锤</TD>
+      <TD class="hpb-cnt-tb-cell2">纵敲1</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">52</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">纵敲2</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">20</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">纵敲1的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">上敲</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">100</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">纵敲2与旋转攻击的连携攻击</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">横敲</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">15</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">旋转攻击</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">20・10・10・10・10・10・40</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">（途中根据旋转数不同可派生出<BR>
+      蓄力（中）和上敲攻击）</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">蓄力（小）攻击</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">45</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">蓄力时间（小）的攻击</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">蓄力（中）攻击</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">45・35</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">蓄力时间（中）的攻击</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">蓄力（大）攻击</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">20・76</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2">蓄力时间（大）的攻击</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1">拔刀攻击</TD>
+      <TD width="183" align="center" class="hpb-cnt-tb-cell2">20</TD>
+      <TD width="306" class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="6" align="center">长枪</TD>
+      <TD class="hpb-cnt-tb-cell2">中段突刺</TD>
+      <TD class="hpb-cnt-tb-cell2" align="center">23・23・30</TD>
+      <TD class="hpb-cnt-tb-cell2">最多连续３回</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">上段突刺</TD>
+      <TD class="hpb-cnt-tb-cell2" align="center">28・28・30</TD>
+      <TD class="hpb-cnt-tb-cell2">最多连续３回</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">突进</TD>
+      <TD class="hpb-cnt-tb-cell2" align="center">20</TD>
+      <TD class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">终结突刺</TD>
+      <TD class="hpb-cnt-tb-cell2" align="center">40</TD>
+      <TD class="hpb-cnt-tb-cell2">突进后的终结突刺</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">防御攻击</TD>
+      <TD class="hpb-cnt-tb-cell2" align="center">20</TD>
+      <TD class="hpb-cnt-tb-cell2">防御中的攻击</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">拔刀攻击</TD>
+      <TD class="hpb-cnt-tb-cell2" align="center">28</TD>
+      <TD class="hpb-cnt-tb-cell2"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<BR>
+其次，在基本威力上还要进行武器斩味对应的倍率叠加计算。<BR>
+<BR>
+斩味倍率<BR>
+等级０(红)　　0.5倍<BR>
+等级１(橙)　　0.75倍<BR>
+等级２(黄)　　1.0倍<BR>
+等级３(緑)　　1.125倍<BR>
+等级４(蓝)　　1.25倍<BR>
+等级５(白)　　1.5倍<BR>
+<BR>
+<BR>
+在基本威力×斩味倍率之后，还要叠加一个斩击修正值进行计算。<BR>
+斩击修正值，表示攻击动作在何时（斩击开始至斩击结束的过程）命中怪物，造成的威力值的变化。<BR>
+此外，对于大剑，根据剑的不同部位命中怪物，其威力也会发生一定变化。<BR>
+详情参考下方的 <B>斩击修正值</B> 。<BR>
+<BR>
+以上计算的是造成的伤害，但怪物有着肉质的设定，会减轻受到的伤害，<BR>
+减轻的程度取决于不同的部位。<BR>
+详情参考 <A href="./EmMeat.html"><B>关于怪物的肉质</B></A> 。<BR>
+<BR>
+最后，还要将怪物的全体防御率加入计算。与玩家相同，怪物也有一个全体的防御力设定，<BR>
+上位的怪物有着更高的防御力。<BR>
+关于各怪物的全体防御率，请参考 <A href="./EmHP.html"><B>关于怪物的体力</B></A> 。<BR>
+<BR>
+最终对怪物造成伤害的效果，根据实际伤害与基本威力的比值有所不同。<BR>
+超过100％的情况下，就是所谓的致命攻击，血肉飞溅。<BR>
+相反，低于25％的情况下，攻击会被弹开。<BR>
+例如，即便白色斩味对基本威力有1.5倍的加成，但在肉质造成的高减轻率下比值也有可能低于25%.<BR>
+<BR>
+<BR>
+<HR>
+●属性伤害<BR>
+<BR>
+<BR>
+使用属性武器进行攻击时，除了通常伤害，还会追加属性伤害。<BR>
+<BR>
+状态信息中的属性值，显示为实际属性值的10倍。<BR>
+因此，对怪物造成的实际属性伤害为<BR>
+<BR>
+　　显示面板属性值÷10×肉质对应的属性减轻率×属性斩味倍率×全体防御率
+<BR>
+<BR>
+属性斩味倍率信息如下。<BR>
+<BR>
+等级０(红)　　0.25倍<BR>
+等级１(橙)　　0.5倍<BR>
+等级２(黄)　　0.75倍<BR>
+等级３(緑)　　1.0倍<BR>
+等级４(蓝)　　1.0625倍<BR>
+等级５(白)　　1.125倍<BR>
+<BR>
+虽然计算过程中都是以实数进行，但是结果中的小数点以下数值全部被舍弃（向下取整），<BR>
+实际数值在等级３以后区别不大。<BR>
+<BR>
+<BR>
+<BR>
+<HR>
+●关于斩击修正值<BR>
+<BR>
+如上所述，斩击修正值会随着攻击动作的命中时机造成威力的变化。<BR>
+请看下图。<BR>
+<BR>
+<P><IMG src="images/kirikata.gif" width="627" height="145" border="0"></P>
+<BR>
+横轴表示时间过程。时间点１与２的具体判定点，取决于武器的种类与具体的攻击动作。<BR>
+基本上来说，武器刚开始挥动时威力较弱，挥动至结束阶段时威力也稍弱，<BR>
+但如果斩味等级在３及以上，挥动的最初阶段就能发挥最大威力。<BR>
+（对于大剑，如果是剑的中段部分命中，1.0倍的部分则按照1.05倍来计算）<BR>
+<BR>
+实际上，斩味等级３及以上的武器，攻击动作直到结束阶段之前，威力可以说都是最大的，<BR>
+因此不需要太在意斩击修正值导致的威力变化。<BR>
+<BR>
+现在，关于<B>心眼</B>技能如何影响斩击修正值，调查结果认为，<BR>
+<BR>
+　　<B>它可以使从武器挥动开始到结束的阶段都可以发挥最大的威力。</B><BR>
+<BR>
+然而，这里有个问题。如果斩味等级为３及以上，武器动作从一开始就能拥有最大威力，<BR>
+所以是否有心眼技能并不重要。如果要讨论对于斩味等级２及以下的情况是否有意义，<BR>
+心眼技能本身又不会在斩味等级５（白斩）以外的情况下发动。<BR>
+在武器挥动的结束阶段确实有一些意义，但实际的结束阶段只占整个攻击动作时间的极小部分。因此可以得出<BR>
+<BR>
+　　<B>心眼技能几乎是没有意义的</B><BR>
+<BR>
+这一结论。<BR>
+<BR>
+*<FONT size="-1">　（以上也许有误，但这是根据我们的调查结果得出的结论。<BR>
+　　 对心眼技能的调查现在已经结束，请不要对此再进行询问。）</FONT><BR>
+<BR>
+<BR>
+2005/04/06<BR>
+2005/03/19<BR>

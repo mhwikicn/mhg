@@ -1,0 +1,464 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.2.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>MHG 关于玩家所受伤害</TITLE>
+<style type="text/css">
+<!--
+.hpb-cnt-tb1{
+	background-color: #333333;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb2{
+	background-color: #333333;
+	border: 0px solid #333333;
+}
+.hpb-cnt-tb-th1 {
+	background-color: #BBBBBB;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+  font-size : 80%;
+}
+.hpb-cnt-tb-cell1 {
+	background-color : #EEEEEE;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+  font-size : 80%;
+}.hpb-cnt-tb-cell0{
+	background-color: #FFFFFF;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width : 0px;
+	border-bottom-width : 0px;
+	border-left-width: 0px;
+	border-top-style : none;
+	border-right-style : none;
+	border-bottom-style : none;
+	border-left-style : none;
+  font-size : 80%;
+}
+.hpb-cnt-tb-cell2 {
+	background-color: #FFFFFF;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+  font-size : 80%;
+  text-indent : 3px;
+}
+.hpb-cnt-tb-cell3 {
+	background-color: #FFFFFF;
+	font-size: 80%;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+  text-align : center;
+}
+-->
+</style>
+<SCRIPT src="scripts/plDamage.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="SetTsuyo()">
+<H3>关于玩家所受伤害</H3>
+<P class="hpb-cnt-tb-cell0">被怪物攻击时，取决于怪物攻击的种类，玩家会受到通常伤害与属性伤害。<BR>
+伤害的计算基本相同，属性攻击的情况还要考虑玩家对应属性的耐性。<BR>
+<BR>
+每个怪物都有自己的攻击力与属性类型的设定，还要与怪物攻击时的<B>攻击力倍率</B>进行相乘来计算。<BR>
+<BR>
+<BR>
+受到攻击时，首先按照以下进行计算。</P>
+<TABLE border="0">
+  <TBODY>
+    <TR>
+      <TD width="30" class="hpb-cnt-tb-cell0"></TD>
+      <TD class="hpb-cnt-tb-cell0" rowspan="2" width="40"><B>公式1</B></TD>
+      <TD class="hpb-cnt-tb-cell0" rowspan="2" width="176">怪物攻击力×攻击力倍率　−</TD>
+      <TD class="hpb-cnt-tb-cell0" width="214"><U>怪物攻击力×攻击力倍率×玩家防御值</U></TD>
+    </TR>
+    <TR>
+      <TD width="34" class="hpb-cnt-tb-cell0"></TD>
+      <TD class="hpb-cnt-tb-cell0" align="center" width="214">玩家防御值＋８０</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<P class="hpb-cnt-tb-cell0">通常攻击的情况下，上述计算结果将作为对玩家造成的伤害。<BR>
+属性攻击的情况下，还要计算以下公式，将其结果与公式1结果相乘。</P>
+<TABLE border="0">
+  <TBODY>
+    <TR>
+      <TD width="30" class="hpb-cnt-tb-cell0"></TD>
+      <TD width="40" class="hpb-cnt-tb-cell0" rowspan="2"><B>公式2</B></TD>
+      <TD class="hpb-cnt-tb-cell0" width="146"><U>１００−玩家属性耐性值</U></TD>
+      <TD class="hpb-cnt-tb-cell0" width="30"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell0"></TD>
+      <TD class="hpb-cnt-tb-cell0" width="146" align="center">１００</TD>
+      <TD class="hpb-cnt-tb-cell0" width="30"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<P class="hpb-cnt-tb-cell0">也就是说，受到属性攻击的情况下，玩家的防御力也会产生影响。<BR>
+因此，除了对应属性的耐性值，玩家基本的防御力也很重要。<BR>
+<BR>
+由公式可以看出，耐性值基本就是属性伤害减轻的百分比。<BR>
+相反，当耐性值为负数时，受到的属性伤害会增加对应的百分比。<BR>
+<BR>
+顺便一提，如果玩家的体力低于40%，防御力会提高30点。<BR>
+<BR>
+<BR>
+下表记录了怪物主要攻击方式攻击力的调查结果。基本来说，根据任务等级没有区别，<BR>
+但上位等级的怪物有着更高的攻击力倍率，因此玩家必然会受到更大的伤害。<BR>
+攻击力倍率请参考<A href="./EmHP.html"><B>关于怪物的体力</B></A> ，但当怪物处于愤怒状态时，其攻击力可以达到更高。<BR>
+　（Ｇ级任务的飞龙，有些在愤怒状态下甚至能超过500％）</P>
+<TABLE border="0" class="hpb-cnt-tb1" cellpadding="2" cellspacing="0">
+  <TBODY>
+    <TR>
+      <TH class="hpb-cnt-tb-th1" width="130">怪物</TH>
+      <TH class="hpb-cnt-tb-th1" width="170">攻击</TH>
+      <TH class="hpb-cnt-tb-th1" width="60">攻击力</TH>
+      <TH class="hpb-cnt-tb-th1" width="130">属性</TH>
+      <TH class="hpb-cnt-tb-th1" width="100">受到的伤害</TH>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="7">雄火龙<BR>
+      雌火龙</TD>
+      <TD class="hpb-cnt-tb-cell2">空中飞踢</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">45</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">毒 （仅限雄火龙）</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">空翻甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">75</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">毒 （仅限雌火龙）</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">火球吐息</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">65</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">火属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">旋转甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">35</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">突进１</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">突进２</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">64</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">噬咬</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">20</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="8">电龙</TD>
+      <TD class="hpb-cnt-tb-cell2">飞扑１</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">飞扑２</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">65</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">旋转甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">电击吐息</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">80</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">雷属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">体内放电</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">55</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">天花板下扑</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">60</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">天花板口水</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">25</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">伸头噬咬</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">55</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="6">铠龙</TD>
+      <TD class="hpb-cnt-tb-cell2">突进</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">70</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">热线１</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">80</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">火属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">热线２</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">100</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">火属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">铁山靠</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">旋转甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">45</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">噬咬</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="6">水龙</TD>
+      <TD class="hpb-cnt-tb-cell2">水中横向水流吐息</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">70</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">水属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">水中纵向水流吐息</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">65</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">水属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">地上水流吐息</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">70</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">水属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">铁山靠</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">水属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">噬咬</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">65</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">旋转甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="6">角龙</TD>
+      <TD class="hpb-cnt-tb-cell2">突进</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">55</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">地下钻出</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">60</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">铁山靠</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">旋转甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">40</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">角上挑</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">55</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">左右甩尾</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">35</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD rowspan="3" class="hpb-cnt-tb-cell1">麒麟</TD>
+      <TD class="hpb-cnt-tb-cell2">落雷</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">50</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">雷属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">突进１</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">40</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">突进２</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">35</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr"></SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" rowspan="2">黑龍</TD>
+      <TD class="hpb-cnt-tb-cell2">火球吐息</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">200</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">火属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell2">突进攻击</TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="power">190</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell2"><SPAN id="attr">龍属性</SPAN></TD>
+      <TD class="hpb-cnt-tb-cell3"><SPAN id="damag"></SPAN></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+* <FONT size="-2">表格内容随调查而进行追加</FONT>
+<BR>
+<BR>
+<TABLE border="1" class="hpb-cnt-tb1" cellpadding="2" cellspacing="0">
+  <TBODY>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" width="579">
+      <FORM name="stsForm"><BR>
+      　输入防具的状态并点击【计算】按钮，计算出的伤害将在上表中显示。　<BR>
+      <BR>
+      　　　防御力：<INPUT size="4" type="text" maxlength="4" tabindex="1" value="1" name="def">　火耐性：<INPUT size="4" type="text" maxlength="4" tabindex="2" value="0" name="hi">　水耐性：<INPUT size="4" type="text" maxlength="4" tabindex="3" value="0" name="mizu">　雷耐性：<INPUT size="4" type="text" maxlength="4" tabindex="4" value="0" name="kami">　龍耐性：<INPUT size="4" type="text" maxlength="4" tabindex="5" value="0" name="ryu"><BR>
+      <BR>
+      　　　飞龙强度：<SELECT tabindex="6" name="tsuyo" onChange="SelTsuyo()">
+        <OPTION selected>普通任务（通常）</OPTION>
+        <OPTION>普通任务（愤怒状态）</OPTION>
+        <OPTION>困难任务（通常）</OPTION>
+        <OPTION>困难任务（愤怒状态）</OPTION>
+        <OPTION>Ｇ级任务（通常）</OPTION>
+        <OPTION>Ｇ级任务（愤怒状态）</OPTION>
+      </SELECT>　攻击力倍率：<INPUT size="4" type="text" maxlength="4" tabindex="7" name="bair">％　　　<INPUT type="button" value="　计　算　" tabindex="8" onClick="CalcDamage()"><BR>
+      <BR>
+      　* 即便同一等级的飞龙，其攻击力倍率也存在个体差异，实际情况下需要适当地修正攻击力倍率。</FORM>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<P class="hpb-cnt-tb-cell0"><BR>
+计算例子：<BR>
+<BR>
+黑龍攻击的伤害，按照玩家防御力180，火耐性20，龍耐性15来进行计算。<BR>
+通常状态攻击力倍率为260％。愤怒状态为1.4倍加成。<BR>
+<BR>
+火球吐息的情况<BR>
+　　　200×2.6−（200×2.6×180）÷（180＋80）＝160　（无火耐性时即死）<BR>
+　　　160×80％＝128<BR>
+<BR>
+突进攻击的情况<BR>
+　　　190×2.6−（190×2.6×180）÷（180＋80）＝152　（无龍耐性时即死）<BR>
+　　　152×85％＝129<BR>
+<BR>
+      如果体力在130以上，似乎能够承受住任何一种攻击。<BR>
+<BR>
+</P>
+2005/04/01<BR>
+<BR>
+<BR>
+<BR>
+</BODY>
+</HTML>

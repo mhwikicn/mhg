@@ -1,0 +1,2453 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.2.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>MHG 关于怪物的肉质</TITLE>
+<style type="text/css">
+<!--
+.hpb-cnt-tb1{
+	background-color: #333333;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb-th1 {
+	background-color: #BBBBBB;
+	font-size: 80%;
+	color: #333333;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.hpb-cnt-tb-th2 {
+	background-color: #CCCCCC;
+	font-size: 80%;
+	color: #333333;
+	border: 0px solid #333333;
+}
+.hpb-cnt-tb-cell1 {
+	background-color: #EEEEEE;
+	font-size: 80%;
+	color: #333333;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+	border-width : 0px 1px 1px 0px;
+}
+.hpb-cnt-tb-cell0{
+	font-size: 80%;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+	border-width : 0px 1px 1px 0px;
+	background-color : white;
+}
+.hpb-cnt-tb-cell2 {
+	background-color : silver;
+	font-size: 80%;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color : #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+	border-width : 0px 1px 1px 0px;
+	background-position : center center;
+	text-align : center;
+}
+.hpb-cnt-tb-cell3 {
+	font-size: 80%;
+	text-align : center;
+	background-color : white;
+	border-bottom-color : #333333;
+	border-right-color : #333333;
+	border-width : 0px 1px 1px 0px;
+}
+.hpb-cnt-tb-cell4 {
+	font-size: 80%;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+	border-width : 0px 1px 1px 0px;
+	background-color : white;
+	text-align : right;
+	width : 30px;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<H3>关于怪物的肉质</H3>
+<P>怪物有着肉质的设定，不同部位的防御力存在差异。<BR>
+表中的数据表示的是承受各种攻击时受到伤害的百分比。<BR>
+因此，数字越大，表示伤害效果越好。<BR>
+<BR>
+对怪物伤害的最终计算，在此进行计算之后，还要考虑全体防御率的因素。<BR>
+关于全体防御率，请参考<A href="EmHP.html">这里</A>。</P>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314011819" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TD class="hpb-cnt-tb-cell0" width="712">更新日志<BR>
+2005/02/27：铠龙的腹部破坏后，其肉质会发生变化，该变化已追加至表中。<BR>
+2005/03/04：麒麟的肉质数据已追加至表中。<BR>
+      2005/03/14：追加了其它怪物的数据。<BR>
+      2005/03/26：红黑龍的肉质数据已追加至表中。</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<BR>
+
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">雄火龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">苍雄火龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">65</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">银雄火龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">雌火龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">樱雌火龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">金雌火龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">大怪鸟<BR>
+      青大怪鸟</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">75</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">毒怪鸟<BR>
+      紫毒怪鸟</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">电龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">赤电龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">水龙<BR>
+      翠水龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">砂龙王</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">12</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">130</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">一角龙<BR>
+      白一角龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">角龙<BR>
+      黑角龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">65</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">85</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="9" width="130" class="hpb-cnt-tb-cell1">铠龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">35</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹（破壊後）</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">75</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="9" width="130" class="hpb-cnt-tb-cell1">黑铠龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹（破壊後）</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">75</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">岩龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">18</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">18</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">18</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">18</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">18</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">18</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">老山龍<BR>
+      苍老山龍</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">28</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">装甲</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">弱点</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中/尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">32</TD>
+<TD class="hpb-cnt-tb-cell4">37</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">黑龍</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">顔</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">75</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">55</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中/尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">胸</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹/足</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+  <TBODY>
+    <TR>
+      <TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">紅黑龍(1)<BR>
+      <BR>
+      (1)与(2)似乎是<BR>
+      交替切换的</TD>
+      <TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">顔</TD>
+      <TD class="hpb-cnt-tb-cell4">50</TD>
+      <TD class="hpb-cnt-tb-cell4">45</TD>
+      <TD class="hpb-cnt-tb-cell4">45</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">80</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">头</TD>
+      <TD class="hpb-cnt-tb-cell4">30</TD>
+      <TD class="hpb-cnt-tb-cell4">25</TD>
+      <TD class="hpb-cnt-tb-cell4">30</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">50</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">背中/尻尾</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">首</TD>
+      <TD class="hpb-cnt-tb-cell4">30</TD>
+      <TD class="hpb-cnt-tb-cell4">25</TD>
+      <TD class="hpb-cnt-tb-cell4">25</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">30</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">胸</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">翼</TD>
+      <TD class="hpb-cnt-tb-cell4">30</TD>
+      <TD class="hpb-cnt-tb-cell4">25</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">腹/足</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+      <TD class="hpb-cnt-tb-cell4">15</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">20</TD>
+    </TR>
+    <TR>
+      <TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">紅黑龍(2)</TD>
+      <TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+      <TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">顔</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">头</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">背中/尻尾</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">首</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">胸</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">翼</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell3">腹/足</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">5</TD>
+      <TD class="hpb-cnt-tb-cell4">10</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="4" width="130" class="hpb-cnt-tb-cell1">麒麟</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">胴体</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">角</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="8" width="130" class="hpb-cnt-tb-cell1">砂龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">首</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">140</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">背中</TD>
+<TD class="hpb-cnt-tb-cell4">130</TD>
+<TD class="hpb-cnt-tb-cell4">140</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">腹</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">尻尾</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">翼</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">足</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">45</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">25</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">蓝速龙王</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">蓝速龙・白蓝速龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">黄速龙王</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">黄速龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">红速龙王</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">红速龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">30</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">巨蜂</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">130</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">爬虫</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">20</TD>
+<TD class="hpb-cnt-tb-cell4">60</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">食草龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="3" width="130" class="hpb-cnt-tb-cell1">甲壳草食龙</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">头</TD>
+<TD class="hpb-cnt-tb-cell4">80</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">90</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">胴体</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">70</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">40</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">苔猪</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">大野猪</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">160</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">50</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">精灵鹿</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">140</TD>
+<TD class="hpb-cnt-tb-cell4">140</TD>
+<TD class="hpb-cnt-tb-cell4">150</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">白猫</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">120</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">黑猫</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">110</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">100</TD>
+<TD class="hpb-cnt-tb-cell4">10</TD>
+</TR>
+</TBODY></TABLE><BR>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_050314015618" class="hpb-cnt-tb1">
+<TBODY>
+<TR>
+<TD rowspan="2" width="130" class="hpb-cnt-tb-cell1">可破坏的岩石</TD>
+<TD class="hpb-cnt-tb-cell2" width="80">部位</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">切断</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">打击</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">弹</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">火</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">水</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">雷</TD>
+<TD class="hpb-cnt-tb-cell2" width="40">龍</TD>
+</TR>
+<TR>
+<TD class="hpb-cnt-tb-cell3">全身</TD>
+<TD class="hpb-cnt-tb-cell4">1</TD>
+<TD class="hpb-cnt-tb-cell4">15</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">0</TD>
+<TD class="hpb-cnt-tb-cell4">5</TD>
+</TR>
+</TBODY></TABLE><BR>
+
+2005/03/14<BR>
+<BR>
+<BR>
+</BODY>
+</HTML>
